@@ -1,0 +1,55 @@
+//----------------  0.1 简单值  ---------------
+
+import UIKit
+
+//let 是常量   var是变量  : 用于明确类型
+var myVariable = 42
+myVariable = 50//变量
+
+let myConstant = 42//常量
+
+let floatV:Float = 4//小数
+
+
+//  用 \() 来取变量或者常量值的，括号中可以用计算符号
+let myStr = "\\()是用来取变量或者常量值的，括号中可以用计算符号 \(myConstant+myVariable)"
+
+let myStr1 = "啦啦啦\(myStr)"
+
+
+//对于多行显示的字符串用"""(三个"),注意 """ 要单占一行
+let apples = 3
+let oranges = 5
+let multilineString = """
+        Even though there'    s whitespace to the left,
+the actual lines aren't indented.
+I still have \(apples + oranges) pieces of fruit.
+"""
+
+
+//数组和字典的初始化都用[]  结尾可以使用,
+var shoppingList = ["catfish", "water", "tulips", "blue paint"] //初始化数组
+
+
+shoppingList[1] = "bottle of water" //根据下标修改字符串
+
+print(shoppingList)
+
+var occupations = [
+    "Malcolm": "Captain",
+    "Kaylee": "Mechanic",
+] //初始化字典
+
+occupations["Jayne"] = "Public Relations"//添加键值对
+print(occupations)
+
+occupations["Kaylee"] = "Public Relations"//根据键更改对应值
+print(occupations)
+
+print(occupations["Kaylee"]!)//字典取值用[""]
+
+
+//创建空字典和空数组 [] 中应该包含成员类型 后面的()表示：调用init方法(使用initializer语法)
+let nilArr = [String]()
+
+let nilDic = [String:NSInteger]()
